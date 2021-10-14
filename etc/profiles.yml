@@ -1,0 +1,24 @@
+#Author: Aldo Pizarro
+#Date: 2021-10-13
+
+#This is a example for file profiles.yml
+#Remember! This file must be placed in "/home/{$USER}/.dbt"
+mysf_jaffle_shop: #This name is used in dbt_project.yml
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: [account]
+
+      # User/password auth
+      user: [user]
+      password: [password]
+
+      role: [role]
+      database: [database]
+      warehouse: [warehouse]
+      schema: [schema]
+      threads: 1
+      client_session_keep_alive: False
+      query_tag: learn_dbt
+
