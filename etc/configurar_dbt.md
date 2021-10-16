@@ -6,7 +6,7 @@
 
 **PREREQUISITO: Haber creado cuenta Snowflake de Prueba**
 
-1. Instalacion de algunas dependencias en SO:  
+1. Instalación de algunas dependencias en SO:  
     - ***Ubuntu/Debian***  
 `sudo apt-get install git libpq-dev python-dev` `python3-pip`  
 `sudo apt-get remove python-cffi`  
@@ -51,7 +51,7 @@ https://courses.getdbt.com/courses/take/fundamentals/texts/17703453-loading-trai
 
 1. Modificar archivo ***dbt_project.yml*** en la raiz del Proyecto, cambiando los valores de conexion
 
-1. Ejecutar los siguiente comandos en la ruta raiz  
+1. Ejecutar el siguiente comando en la ruta raiz  
 `dbt debug`: Valida la configuracion del archivo profiles y dbt_project
 
 1. Crear el repositorio en github
@@ -64,12 +64,18 @@ https://courses.getdbt.com/courses/take/fundamentals/texts/17703453-loading-trai
 `git push -u origin main`  
 *Nota: Utilizar el repo creado en el paso previo*  
 
+1. Para verificar el proceso, ejecutar el siguiente comando en la ruta raiz  
+`dbt run`: Despliega todo los modelos de prueba en el ambiente Snowflake  
+![Objetos Desplegados!](deploy_objects.png "Objetos Desplegados")
+
+<br />
+
 ## Referencias:
 
-- Instalacion del dbt-cli:  
+- Instalación del dbt-cli:  
 https://docs.getdbt.com/dbt-cli/installation  
 
-- Configurando entorno:  
+- Configuración entorno:  
 https://docs.getdbt.com/tutorial/setting-up  
 
 - Configuracion de un modelo de ejemplo en dbt:  
@@ -78,8 +84,8 @@ https://www.getdbt.com/getting-started-tutorial/#!/model/model.jaffle_shop.stg_o
 - Configuracion del dbt-cloud:  
 https://docs.getdbt.com/docs/dbt-cloud/cloud-overview  
 
-- Referencia de Comando Basicos:  
+- Referencia de Comando Básicos:  
 https://github.com/dbt-labs/jaffle_shop
 
-- Documentacion Adicional del Framwork:  
+- Documentación Adicional del Framework:  
 https://docs.getdbt.com/  
