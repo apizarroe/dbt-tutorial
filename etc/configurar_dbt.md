@@ -4,18 +4,30 @@
 
 # CONFIGURACION DEL ENTORNO DE TRABAJO PARA DBT
 
-1. Se instala virtualenv: 
-`python3 -m pip install virtualenv`
+1. Instalacion de algunas dependencias en SO:  
+- ***Ubuntu/Debian***  
+`sudo apt-get install git libpq-dev python-dev` `python3-pip`  
+`sudo apt-get remove python-cffi`  
+`sudo pip install --upgrade cffi`  
+ 
+- ***CentOS***  
+`sudo yum install redhat-rpm-config gcc libffi-devel python-devel openssl-devel`
+
+1. Se instala virtualenv:  
+`python3 -m pip install virtualenv`  
 
 1. Se crea el entorno virtual (Se pude utilizar el ***/home/$USER***)  
 `virtualenv <name_virtualenv>`  
 *Nota: Este comando genera una carpeta con el nombre asignado al virtualenv*
 
 1. Se activa el entorno virtual  
-`. <name_virtualenv>/bin/activate`
-
-1. Salir del entorno virtual  
+`. <name_virtualenv>/bin/activate`  
+*Para Salir del entorno virtual usar:*  
 `deactivate`
+
+1. Se instala dbt mediante pip  
+`python3 -m pip install cryptography~=3.4`    
+`python3 -m pip install dbt`
 
 1. Obtener la data de Prueba: (Opcional)  
 `wget http://dbt-tutorial-public.s3-us-west-2.amazonaws.com/stripe_payments.csv`  
