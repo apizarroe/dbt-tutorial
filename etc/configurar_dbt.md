@@ -90,6 +90,9 @@ https://www.getdbt.com/getting-started-tutorial/#!/model/model.jaffle_shop.stg_o
 - Configuracion del dbt-cloud:  
 https://docs.getdbt.com/docs/dbt-cloud/cloud-overview  
 
+- Como generar documentacion:  
+https://docs.getdbt.com/reference/commands/cmd-docs  
+
 - Referencia de Comando Básicos:  
 https://github.com/dbt-labs/jaffle_shop
 
