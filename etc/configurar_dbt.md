@@ -71,7 +71,7 @@ https://courses.getdbt.com/courses/take/fundamentals/texts/17703453-loading-trai
 1. Para generar la documentación del Proyecto, ejecutar el siguiente comando en la ruta raiz  
     - `dbt docs generate`: Genera la documentacion del proyecto en un website  
     Alternativo: `dbt docs generate --no-compile`
-    - `dbt docs serve`: Se genera un servidor web en el puerto 8000 para la documentacion de forma local. La raiz del servidor es la carpeta **target/**
+    - `dbt docs serve`: Se genera un servidor web en el puerto 8000 para la documentacion de forma local. La raiz del servidor es la carpeta **target/**  
     Alternativo: `dbt docs serve --port 8001`
 
 <br />
