@@ -4,14 +4,15 @@
 
 # CONFIGURACION DEL ENTORNO DE TRABAJO PARA DBT
 
+**PREREQUISITO: Haber creado cuenta Snowflake de Prueba**
+
 1. Instalacion de algunas dependencias en SO:  
-- ***Ubuntu/Debian***  
+    - ***Ubuntu/Debian***  
 `sudo apt-get install git libpq-dev python-dev` `python3-pip`  
 `sudo apt-get remove python-cffi`  
-`sudo pip install --upgrade cffi`  
- 
-- ***CentOS***  
-`sudo yum install redhat-rpm-config gcc libffi-devel python-devel openssl-devel`
+`sudo pip install --upgrade cffi` 
+    - ***CentOS***  
+`sudo yum install redhat-rpm-config gcc libffi-devel python-devel openssl-devel`  
 
 1. Se instala virtualenv:  
 `python3 -m pip install virtualenv`  
@@ -82,4 +83,3 @@ https://github.com/dbt-labs/jaffle_shop
 
 - Documentacion Adicional del Framwork:  
 https://docs.getdbt.com/  
-
