@@ -1,44 +1,73 @@
-#Author: Aldo Pizarro
-
+#Archivo: configurar_dbt.md  
+#Author: Aldo Pizarro  
 #Date: 2021-10-13
 
 # CONFIGURACION DEL ENTORNO DE TRABAJO PARA DBT
 
-1. Se instala virtualenv:(https://docs.getdbt.com/dbt-cli/installation)  
+1. Se instala virtualenv: 
 `python3 -m pip install virtualenv`
 
-2. Se crea el entorno virtual (Se pude utilizar el ***/home/$USER***)  
+1. Se crea el entorno virtual (Se pude utilizar el ***/home/$USER***)  
 `virtualenv <name_virtualenv>`  
 *Nota: Este comando genera una carpeta con el nombre asignado al virtualenv*
 
-3. Se activa el entorno virtual  
+1. Se activa el entorno virtual  
 `. <name_virtualenv>/bin/activate`
 
-4. Salir del entorno virtual  
+1. Salir del entorno virtual  
 `deactivate`
 
-5. Obtener la data de Prueba: (Opcional)  
+1. Obtener la data de Prueba: (Opcional)  
 `wget http://dbt-tutorial-public.s3-us-west-2.amazonaws.com/stripe_payments.csv`  
 `wget http://dbt-tutorial-public.s3-us-west-2.amazonaws.com/jaffle_shop_orders.csv`  
 `wget http://dbt-tutorial-public.s3-us-west-2.amazonaws.com/jaffle_shop_customers.csv`
 
-6. Crear la base de datos  
+1. Crear la base de datos  
 `create database raw;`  
 `commit;`  
 `use database raw;`
 
-7. Ejecutar la carga de datos a Snowflake  
+1. Ejecutar la carga de datos a Snowflake  
 https://courses.getdbt.com/courses/take/fundamentals/texts/17703453-loading-training-data-into-your-warehouse  
 **Sección Snowflake**
 
-8. Crear el repositorio en github y Clonarlo.
-
-9. Ejecutar los siguiente comandos en la ruta raiz  
+1. Ejecutar los siguiente comandos en la ruta raiz  8
 `dbt init`: Inicializa el Proyecto DBT
 
-10. Generar archivo ***profiles.yml*** en /home/$USER/.dbt
+1. Generar archivo ***profiles.yml*** en ***/home/$USER/.dbt***, puedes encontrar un template en el repositorio en la carpeta *etc*
 
-11. Modificar archivo ***dbt_project.yml*** en la raiz del Proyecto, cambiando los valores de conexion
+1. Modificar archivo ***dbt_project.yml*** en la raiz del Proyecto, cambiando los valores de conexion
 
-12. Ejecutar los siguiente comandos en la ruta raiz  
+1. Ejecutar los siguiente comandos en la ruta raiz  
 `dbt debug`: Valida la configuracion del archivo profiles y dbt_project
+
+1. Crear el repositorio en github
+
+1. Para la carga del proyecto a Git, ejecutar lo siguientes comandos  
+`git init`  
+`git commit -m "Create a dbt project"`  
+`git branch -M main`  
+`git remote add origin https://github.com/apizarroe/dbt-tutorial.git`  
+`git push -u origin main`  
+*Nota: Utilizar el repo creado en el paso previo*  
+
+## Referencias:
+
+- Instalacion del dbt-cli:  
+https://docs.getdbt.com/dbt-cli/installation  
+
+- Configurando entorno:  
+https://docs.getdbt.com/tutorial/setting-up  
+
+- Configuracion de un modelo de ejemplo en dbt:  
+https://www.getdbt.com/getting-started-tutorial/#!/model/model.jaffle_shop.stg_orders  
+
+- Configuracion del dbt-cloud:  
+https://docs.getdbt.com/docs/dbt-cloud/cloud-overview  
+
+- Referencia de Comando Basicos:  
+https://github.com/dbt-labs/jaffle_shop
+
+- Documentacion Adicional del Framwork:  
+https://docs.getdbt.com/  
+
