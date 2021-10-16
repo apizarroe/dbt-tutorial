@@ -64,7 +64,7 @@ https://courses.getdbt.com/courses/take/fundamentals/texts/17703453-loading-trai
 `git push -u origin main`  
 *Nota: Utilizar el repo creado en el paso previo*  
 
-1. Para verificar el proceso, ejecutar el siguiente comando en la ruta raiz  
+1. Para verificar que todo el proceso fué exitoso, ejecutar el siguiente comando en la ruta raiz  
 `dbt run`: Despliega todo los modelos de prueba en el ambiente Snowflake  
 ![Objetos Desplegados!](deploy_objects.png "Objetos Desplegados")
 
