@@ -31,7 +31,7 @@
 https://courses.getdbt.com/courses/take/fundamentals/texts/17703453-loading-training-data-into-your-warehouse  
 **Sección Snowflake**
 
-1. Ejecutar los siguiente comandos en la ruta raiz  8
+1. Ejecutar los siguiente comandos en la ruta raiz  
 `dbt init`: Inicializa el Proyecto DBT
 
 1. Generar archivo ***profiles.yml*** en ***/home/$USER/.dbt***, puedes encontrar un template en el repositorio en la carpeta *etc*
