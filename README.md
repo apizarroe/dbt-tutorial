@@ -6,7 +6,8 @@ Try running the following commands:
 - dbt test
 
 ### Guide to deploy environment:  
-https://github.com/apizarroe/dbt-tutorial/blob/main/etc/configurar_dbt.md  
+https://github.com/apizarroe/dbt-tutorial/blob/main/etc/configurar_dbt_es.md (**Español**)
+https://github.com/apizarroe/dbt-tutorial/blob/main/etc/configurar_dbt_en.md (**English**)
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
