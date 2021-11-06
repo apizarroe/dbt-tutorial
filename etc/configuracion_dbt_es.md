@@ -84,7 +84,7 @@ https://docs.getdbt.com/dbt-cli/installation
 - Configuración entorno:  
 https://docs.getdbt.com/tutorial/setting-up  
 
-- Ejemplo de un modelo desplegado en dbt:  
+- Ejemplo de documentacion de modelo desplegado en dbt:  
 https://www.getdbt.com/getting-started-tutorial/#!/model/model.jaffle_shop.stg_orders  
 
 - Configuracion del dbt-cloud:  

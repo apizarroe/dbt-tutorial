@@ -84,7 +84,7 @@ https://docs.getdbt.com/dbt-cli/installation
 - Environment configuration:  
 https://docs.getdbt.com/tutorial/setting-up  
 
-- Example of model depoyment in dbt:  
+- Example of documentation for a model deployed in dbt:  
 https://www.getdbt.com/getting-started-tutorial/#!/model/model.jaffle_shop.stg_orders  
 
 - Configuration del dbt-cloud:  
